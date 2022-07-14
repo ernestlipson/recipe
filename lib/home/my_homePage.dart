@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:recipe/home/food_page.dart';
 import 'package:recipe/widgets/customText.dart';
 import 'package:recipe/widgets/customTextSmall.dart';
 
@@ -47,19 +48,19 @@ class _MainHomePageState extends State<MainHomePage> {
                           )
                         ],
                       ),
-                      PageView(
-                        children: [
-                          Container(
-                            color: AppColor.textColor,
-                          ),
-                          Container(
-                            color: AppColor.barColor,
-                          ),
-                          Container(
-                            color: AppColor.foregroundColor,
-                          ),
-                        ],
-                      ),
+                      // // PageView(
+                      //   children: [
+                      //     Container(
+                      //       color: AppColor.textColor,
+                      //     ),
+                      //     Container(
+                      //       color: AppColor.barColor,
+                      //     ),
+                      //     Container(
+                      //       color: AppColor.foregroundColor,
+                      //     ),
+                      //   ],
+                      // ),
                     ],
                   ),
                   Center(
@@ -81,6 +82,7 @@ class _MainHomePageState extends State<MainHomePage> {
               ),
             ),
           ),
+          const FoodPage(),
         ],
       ),
     );
